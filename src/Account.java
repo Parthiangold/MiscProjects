@@ -1,66 +1,75 @@
-import java.util.Scanner;
+import java.util.*;
+import java.io.*;
+import java.nio.*;
 
 public class Account implements MyFileIO{
     private int number;
     private String bank;
     private double balance;
     private String type;
-
-    //Empty Constructor Class
-    public Account(){}
-
-    //Parameterised Constructor
-    public Account(int number, String bank, double balance, String type){
+    
+	public Account() {
+        number = 0;
+        bank = "";
+        balance = 0.0;
+        type = "";		
+	}
+	
+    public Account(int number, String bank, double balance, String type) {
         this.number = number;
         this.bank = bank;
         this.balance = balance;
         this.type = type;
     }
-
-    //Getters and Setters
-    public int getNumber() {
-        return number;
-    }
-    public void setNumber(int number) {
-        this.number = number;
-    }
-    public String getBank() {
-        return bank;
-    }
-    public void setBank(String bank) {
-        this.bank = bank;
-    }
-    public double getBalance() {
-        return balance;
-    }
-    public void setBalance(double balance) {
-    }
-    public String getType() {
-        return type;
-    }
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    // Read Data Method
-    @Override
-    public void readData(Scanner sc){
-        this.number = sc.nextInt();
-        this.bank = sc.next();
-        this.balance = sc.nextDouble();
-        this.type = sc.next();
-    }
-
-    // Write Data Method
-    @Override
-    public void writeData(java.util.Formatter f){
-        f.format("%d %s %.2f %s", this.number, this.bank, this.balance, this.type);
-    }
-
-    // toString Method
-    @Override
-    public String toString(){
-        return String.format("%d %s %.2f %s", this.number, this.bank, this.balance, this.type);
-    }
-
+    
+    
+    public int getNumber() { return number; }
+	
+	public String getBank() { return bank; }
+	
+	public double getBalance() { return balance;}
+	
+	public String getType() { return type; }
+	
+	public void setNumber(int number) { this.number = number; }
+	
+	public void setBank(String bank) { this.bank = bank; }
+	
+	public void setBalance(double balance) { this.balance = balance; }
+	
+	public void setType(String type) { this.type = type; }
+	
+	public void readData(Scanner input) { 
+		//Read data from the input
+		try {
+			number = input.nextInt();
+			//System.out.println("Number: " + number);
+			bank = input.next();
+			//System.out.println("Bank: " + bank);
+			balance = input.nextDouble();
+			//System.out.println("Balance: " + balance);
+			type = input.next();
+			//System.out.println("Type: " + type);
+		}
+		catch (InputMismatchException e) {
+				System.out.println("Wrong input type. " + e);
+				input.next(); //Jump over the string
+		}
+	}
+	
+	public void writeData(Formatter output) {
+		output.format("%s", toString());
+	}
+	
+	public String toString() {
+		String s = number + ", " + bank + ", " + balance + ", " + type;
+		
+		return s;
+	}
+	
+	public String displayString() {
+		String s = "Number: " + number + "\nBank: " + bank + "\nBalance: " + balance + "\nType: " + type;
+		
+		return s;
+	}
 }

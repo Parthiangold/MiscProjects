@@ -1,9 +1,9 @@
-import java.util.Scanner;
-import java.util.Formatter;
+import java.util.*;
+import java.io.*;
+import java.nio.*;
 
-// Interface Added and implemented
-public interface MyFileIO{
-    void readData(Scanner sc);
-    void writeData(Formatter f);
-    String toString();
+public interface MyFileIO {  
+    public void readData(Scanner input);
+	public void writeData(Formatter output);
+	public String toString();
 }
