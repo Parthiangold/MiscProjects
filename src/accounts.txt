@@ -1,0 +1,43 @@
+12345678, China Construction Bank, 12334.00, savings
+12345679, China Construction Bank, 823.67, savings
+41234567, National Australia Bank, 223.60, savings
+12345679, National Australia Bank, 222.20, savings
+91234589, National China Bank, 379.40, savings
+11234557, National China Bank, 633.01, savings
+21233567, National China Bank, 999.67, savings
+51224567, China Construction Bank, 521.20, savings
+31334568, China Construction Bank, 220.37, savings
+59345672, China Construction Bank, 125.69, savings
+96345671, China Merchants Bank, 323.57, loan
+21234533, China Merchants Bank, 163.97, loan
+11534567, China Merchants Bank, 193.11, loan
+91234567, China Industrial Bank, 129.25, checking
+11934583, China Industrial Bank, 923.55, checking
+62345671, China Industrial Bank, 553.37, checking
+52345679, City Bank of New York, 884.64, loan
+11234589, City Bank of New York, 999.52, loan
+82342584, City Bank of New York, 189.33, loan
+12335784, National Fuji Bank, 177.60, savings
+15356782, National Fuji Bank, 223.62, savings
+81256781, National Fuji Bank, 835.25, savings
+51456725, National AK Bars Bank, 990.30, savings
+33456712, National AK Bars Bank, 985.28, savings
+12345670, National Royal Bank, 225.14, checking
+41256720, National Royal Bank, 378.17, checking
+93456717, National Royal Bank, 898.26, checking
+11256768, Agricultural Bank of China, 111.67, savings
+21456703, Agricultural Bank of China, 147.69, savings
+61345705, Agricultural Bank of China, 878.36, savings
+72345619, National Banco BPM Bank, 975.35, loan
+12345630, National Bank BPS, 986.98, savings
+33456720, National Bank of Tokyo, 955.61, savings
+22456770, National Bank of Tokyo, 555.87, savings
+25456757, National Tokai Bank, 658.99, savings
+36456728, National Daiwa Bank, 728.65, loan
+78456713, National Swiss Bank Corp, 566.85, loan
+72456719, National Swiss Bank Corp, 985.35, loan
+41456730, National Banco do Brasil, 255.98, savings
+11456712, National Westminster Bank, 333.11, savings
+62456740, National Royal Bank of Canada, 174.27, savings
+25456752, National Royal Bank of Canada, 185.19, savings
+33456721, National Royal Bank of Canada, 366.60, savings
