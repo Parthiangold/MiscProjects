@@ -1,1 +1,3 @@
-69420 Bank of Bruh 69000000.00 Savings69420 Bank of Bruh 69000000.00 Savings
+0, , 0.0, 
+69, Bank of Bruh, 694200.0, Savings
+420, L33tSp3k Lel, 1337.0, Cheque
