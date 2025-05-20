@@ -2,6 +2,7 @@ public class BankBalance {
     private String bank;
     private double balance;
 
+    //Create the GUI
     public BankBalance(String bank, double balance) {
         this.bank = bank;
         this.balance = balance;
@@ -23,11 +24,24 @@ public class BankBalance {
         this.balance = balance;
     }
 
+    public void addBalance(double amount) {
+        balance += amount;
+    }
+
+    //If the bank is the same then return true, else return false
+    public boolean equals(String bank) {
+        if(this.bank.equals(bank))
+            return true;
+        else
+            return false;
+    }
+
+    //If the bank is the same then return true, else return false
     @Override
-    public boolean equals(Object obj) {
-        if (obj instanceof String) {
-            return bank.equalsIgnoreCase((String) obj);
-        }
-        return false;
+    public boolean equals(Object b) {
+        if(bank.equals(((BankBalance)b).bank))
+            return true;
+        else
+            return false;
     }
 }
